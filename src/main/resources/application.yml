@@ -1,0 +1,19 @@
+#spring:
+  #application:    #name: zuul-service
+#server:  #port: 8011
+#eureka:
+  #client:
+    #register-with-eureka: true
+    #fetch-registry: true
+    #service-url:      #defaultZone: http://localhost:8010/eureka
+  #instance:
+    #hostname: localhost
+    
+#zuul:
+  #prefix: false
+  #routes:    #auth-service:
+      #path: /auth-service/**
+      #url: http://localhost:3305
+    #mongo-service:
+      #path: /mongo-service/**
+      #url: http://localhost:8087
